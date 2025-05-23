@@ -21,6 +21,13 @@ int main() {
         linha_navio_vertical + TAMANHO_NAVIO > TAMANHO_TABULEIRO) {
         printf("Erro: um dos navios excede os limites do tabuleiro.\n");
         return 1;
-
-    return 0;
 }
+
+int sobreposicao = 0;
+    for (int i = 0; i < TAMANHO_NAVIO; i++) {
+        if (tabuleiro[linha_navio_horizontal][coluna_navio_horizontal + i] == 3 ||
+            tabuleiro[linha_navio_vertical + i][coluna_navio_vertical] == 3) {
+            sobreposicao = 1;
+            break;
+        }
+    }
