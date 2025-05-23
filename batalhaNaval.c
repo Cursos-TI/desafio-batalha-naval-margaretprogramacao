@@ -17,5 +17,10 @@ int main() {
     int linha_navio_vertical = 5; 
     int coluna_navio_vertical = 1; 
 
+    if (coluna_navio_horizontal + TAMANHO_NAVIO > TAMANHO_TABULEIRO ||
+        linha_navio_vertical + TAMANHO_NAVIO > TAMANHO_TABULEIRO) {
+        printf("Erro: um dos navios excede os limites do tabuleiro.\n");
+        return 1;
+
     return 0;
 }
