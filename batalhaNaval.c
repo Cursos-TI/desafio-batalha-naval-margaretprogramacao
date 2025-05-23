@@ -40,3 +40,7 @@ if (sobreposicao) {
 for (int i = 0; i < TAMANHO_NAVIO; i++) {
         tabuleiro[linha_navio_horizontal][coluna_navio_horizontal + i] = 3;
 }
+
+for (int i = 0; i < TAMANHO_NAVIO; i++) {
+        tabuleiro[linha_navio_vertical + i][coluna_navio_vertical] = 3;
+}
