@@ -30,4 +30,9 @@ int sobreposicao = 0;
             sobreposicao = 1;
             break;
         }
-    }
+}
+
+if (sobreposicao) {
+        printf("Erro: sobreposição de navios detectada.\n");
+        return 1;
+}
