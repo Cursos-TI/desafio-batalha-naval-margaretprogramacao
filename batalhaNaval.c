@@ -36,3 +36,7 @@ if (sobreposicao) {
         printf("Erro: sobreposição de navios detectada.\n");
         return 1;
 }
+
+for (int i = 0; i < TAMANHO_NAVIO; i++) {
+        tabuleiro[linha_navio_horizontal][coluna_navio_horizontal + i] = 3;
+}
