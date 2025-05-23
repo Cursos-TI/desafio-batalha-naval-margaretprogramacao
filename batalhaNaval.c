@@ -44,3 +44,14 @@ for (int i = 0; i < TAMANHO_NAVIO; i++) {
 for (int i = 0; i < TAMANHO_NAVIO; i++) {
         tabuleiro[linha_navio_vertical + i][coluna_navio_vertical] = 3;
 }
+
+printf("\nTabuleiro (0 = água, 3 = navio):\n\n");
+    for (int linha = 0; linha < TAMANHO_TABULEIRO; linha++) {
+        for (int coluna = 0; coluna < TAMANHO_TABULEIRO; coluna++) {
+            printf("%d ", tabuleiro[linha][coluna]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
